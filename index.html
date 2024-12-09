@@ -4,104 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IKT | Kezdőlap | Balog Dávid |</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Hivatkozás a külső CSS fájlra -->
 </head>
 <body>
 
- <!-- Fejléc teteje-->
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        background-color: #f4f4f4;
-    }
-
-    header {
-        background-color: #333;
-        color: #fff;
-        padding: 10px 0;
-        position: fixed;
-        width: 100%;
-        top: 0;
-        left: 0;
-        box-shadow: 0 4px 2px -2px gray;
-        z-index: 1000;
-    }
-
-    .container {
-        width: 90%;
-        max-width: 1200px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .logo {
-        font-size: 24px;
-        font-weight: bold;
-    }
-
-    nav ul {
-        list-style: none;
-        display: flex;
-    }
-
-    nav ul li {
-        margin-left: 20px;
-    }
-
-    nav ul li a {
-        color: #fff;
-        text-decoration: none;
-        font-size: 18px;
-        transition: color 0.3s ease;
-    }
-
-    nav ul li a:hover { 
-        color: #ff6347;
-    }
-
-    @media (max-width: 768px) {
-        nav ul {
-            flex-direction: column;
-            position: absolute;
-            top: 50px;
-            left: -100%;
-            width: 100%;
-            background-color: #333;
-            transition: left 0.3s ease;
-        }
-
-        nav ul li {
-            text-align: center;
-            margin: 15px 0;
-        }
-
-        .menu-toggle {
-            display: block;
-            font-size: 24px;
-            color: #fff;
-            cursor: pointer;
-        }
-
-        nav.active ul {
-            left: 0;
-        }
-    }
-
-    .menu-toggle {
-        display: none;
-    }
-</style>
-</head>
-<body>
-
+<!-- Fejléc teteje -->
 <header>
     <div class="container">
         <div class="logo">
@@ -119,8 +26,7 @@
     </div>
 </header>
 
-
-<!--Telefonos megnyitó-->
+<!-- Telefonos megnyitó -->
 <script>
     const menuToggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('nav');
@@ -129,248 +35,125 @@
         nav.classList.toggle('active');
     });
 </script>
-<!--Telefonos megnyitó cucc-->
 
-</body>
-</html>
-
- <!-- Fejléc ala-->
-
- <style>
-    table {
-        width: 100%;
-        border-collapse: collapse;
-    }
-    th, td {
-        border: 1px solid #ddd;
-        padding: 8px;
-        text-align: center;
-    }
-    th {
-        background-color: #f2f2f2;
-    }
-    td {
-        background-color: #cce5ff;
-    }
-</style>
-</head>
- 
-    <body>
-        <center>  
-            <h1> </h1>
-            <h1> </h1>
-          <h3>Órarendem</h3>
-      <h1>2024.11.03</h1>
-      </center>
-      </body>
+<!-- Órarend -->
+<center>  
+    <h1> </h1>
+    <h1> </h1>
+    <h3>Órarendem</h3>
+    <h1>2024.11.03</h1>
+</center>
 
 <table>
-<tr>
-    <th>Óraszám</th>
-    <th>Idő</th>
-    <th>Hétfő</th>
-    <th>Kedd</th>
-    <th>Szerda</th>
-    <th>Csütörtök</th>
-    <th>Péntek</th>
-</tr>
-<tr>
-    <td>0.</td>
-    <td>7:15 - 8:00</td>
-    <td></td>
-    <td>Programozási alapok</td>
-    <td></td>
-    <td></td>
-    <td></td>
-</tr>
-<tr>
-    <td>1.</td>
-    <td>8:00 - 8:45</td>
-    <td></td>
-    <td>Programozási alapok</td>
-    <td>Magyar nyelv és irodalom</td>
-    <td>Angol nyelv</td>
-    <td></td>
-</tr>
-<tr>
-    <td>2.</td>
-    <td>8:55 - 9:40</td>
-    <td>Testnevelés</td>
-    <td>Magyar nyelv és irodalom</td>
-    <td>Osztályfőnöki</td>
-    <td>Informatika és távközlés</td>
-    <td>Történelem</td>
-</tr>
-<tr>
-    <td>3.</td>
-    <td>9:50 - 10:35</td>
-    <td>Történelem</td>
-    <td>Angol nyelv</td>
-    <td>Angol nyelv</td>
-    <td>Informatika és távközlés</td>
-    <td>Magyar nyelv és irodalom</td>
-</tr>
-<tr>
-    <td>4.</td>
-    <td>10:45 - 11:30</td>
-    <td>IKT projektmunka</td>
-    <td>Angol nyelv</td>
-    <td>Angol nyelv</td>
-    <td>Informatika és távközlés</td>
-    <td>Matematika</td>
-</tr>
-<tr>
-    <td>5.</td>
-    <td>11:40 - 12:25</td>
-    <td>Komplex természettudomány</td>
-    <td>Magyar nyelv és irodalom</td>
-    <td>Komplex természettudomány</td>
-    <td>Testnevelés</td>
-    <td>Honvédelem</td>
-</tr>
-<tr>
-    <td>6.</td>
-    <td>12:45 - 13:30</td>
-    <td>IKT projektmunka</td>
-    <td>Matematika</td>
-    <td>Matematika</td>
-    <td>Matematika</td>
-    <td>Magyar nyelv és irodalom</td>
-</tr>
-<tr>
-    <td>7.</td>
-    <td>13:35 - 14:20</td>
-    <td>Digitális kultúra</td>
-    <td>Komplex természettudomány</td>
-    <td></td>
-    <td>Történelem</td>
-    <td>Testnevelés</td>
-</tr>
-<tr>
-    <td>8.</td>
-    <td>14:25 - 15:10</td>
-    <td>Digitális kultúra</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>Testnevelés</td>
-</tr>
+    <tr>
+        <th>Óraszám</th>
+        <th>Idő</th>
+        <th>Hétfő</th>
+        <th>Kedd</th>
+        <th>Szerda</th>
+        <th>Csütörtök</th>
+        <th>Péntek</th>
+    </tr>
+    <tr>
+        <td>0.</td>
+        <td>7:15 - 8:00</td>
+        <td></td>
+        <td>Programozási alapok</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>1.</td>
+        <td>8:00 - 8:45</td>
+        <td></td>
+        <td>Programozási alapok</td>
+        <td>Magyar nyelv és irodalom</td>
+        <td>Angol nyelv</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>2.</td>
+        <td>8:55 - 9:40</td>
+        <td>Testnevelés</td>
+        <td>Magyar nyelv és irodalom</td>
+        <td>Osztályfőnöki</td>
+        <td>Informatika és távközlés</td>
+        <td>Történelem</td>
+    </tr>
+    <tr>
+        <td>3.</td>
+        <td>9:50 - 10:35</td>
+        <td>Történelem</td>
+        <td>Angol nyelv</td>
+        <td>Angol nyelv</td>
+        <td>Informatika és távközlés</td>
+        <td>Magyar nyelv és irodalom</td>
+    </tr>
+    <tr>
+        <td>4.</td>
+        <td>10:45 - 11:30</td>
+        <td>IKT projektmunka</td>
+        <td>Angol nyelv</td>
+        <td>Angol nyelv</td>
+        <td>Informatika és távközlés</td>
+        <td>Matematika</td>
+    </tr>
+    <tr>
+        <td>5.</td>
+        <td>11:40 - 12:25</td>
+        <td>Komplex természettudomány</td>
+        <td>Magyar nyelv és irodalom</td>
+        <td>Komplex természettudomány</td>
+        <td>Testnevelés</td>
+        <td>Honvédelem</td>
+    </tr>
+    <tr>
+        <td>6.</td>
+        <td>12:45 - 13:30</td>
+        <td>IKT projektmunka</td>
+        <td>Matematika</td>
+        <td>Matematika</td>
+        <td>Matematika</td>
+        <td>Magyar nyelv és irodalom</td>
+    </tr>
+    <tr>
+        <td>7.</td>
+        <td>13:35 - 14:20</td>
+        <td>Digitális kultúra</td>
+        <td>Komplex természettudomány</td>
+        <td></td>
+        <td>Történelem</td>
+        <td>Testnevelés</td>
+    </tr>
+    <tr>
+        <td>8.</td>
+        <td>14:25 - 15:10</td>
+        <td>Digitális kultúra</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Testnevelés</td>
+    </tr>
 </table>
 
-</body>
-</html>
-
-
-<body>
-  <center>  
-    <h4> </h6>
-<h1>2024.09.30 Bemutatkozás</h1>
-</center>
-</body>
-
-
-
-  <!-- gomb htmlcss-->
-  <style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        height: 100vh;
-        display: block;
-        justify-content: center; /* Vízszintesen középre igazítás */
-        align-items: center;    /* Függőlegesen középre igazítás */
-    }
-
-    /* gomb konténer */
-    .button-container {
-        display: flex;
-        flex-direction: column; /* Gombok egymás alatt */
-        align-items: center;
-        gap: 20px; /* gombok közötti távolság */
-    }
-
-    .btn {
-        padding: 15px 30px;
-        font-size: 16px;
-        font-weight: bold;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        border: none;
-        border-radius: 30px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        text-decoration: none; 
-        color: white; /* Szöveg színe */
-        display: inline-block; /* Blokkszintű gomb stílus */
-    }
-
-    /* Első gomb kinézete */
-    .btn-primary {
-        background-color: #3498db;
-    }
-
-    .btn-primary:hover {
-        background-color: #2980b9;
-        box-shadow: 0 8px 15px rgba(52, 152, 219, 0.4);
-    }
-
-    /* Második gomb kinézete */
-    .btn-secondary {
-        background-color: #2ecc71;
-    }
-
-    .btn-secondary:hover {
-        background-color: #27ae60;
-        box-shadow: 0 8px 15px rgba(46, 204, 113, 0.4);
-    }
-
-</style>
-</head>
-<body>
-
+<!-- Gombok -->
 <div class="button-container">
     <h1> </h1>
-<a href="rovidebb.html" target="_blank" class="btn btn-primary">Rövidebb</a>
-<a href="hosszabb.html" target="_blank" class="btn btn-secondary">Hosszabb</a>
+    <a href="rovidebb.html" target="_blank" class="btn btn-primary">Rövidebb</a>
+    <a href="hosszabb.html" target="_blank" class="btn btn-secondary">Hosszabb</a>
 </div>
 
-</body>
-</html>
-  <!-- gombk vége-->
+<!-- Képek -->
+<center>  
+    <h4> </h6>
+    <h1>2024.10.07</h1>
+    <img src="malom.jpg" alt="Malom" title="MALOMKA">
+</center>
 
-  <!-- 2024.10.17 ÓRAI KEZDETE-->
-
-<head>
-    <style>
-        img {
-          width: 20%;
-          height: 40%;
-        }
-        </style>
-    </head>
-
-  <body>
-    <center>  
-      <h4> </h6>
-  <h1>2024.10.07</h1>
-
-  <img src="malom.jpg" alt="Malom" title="MALOMKA">
-
-      </body>
-
-      <body>
-
-        <h4> </h6>
-            <h1>2024.10.13</h1>
-
-  <center>
-    <img style="width: 600px; height: 500px;" src="montazs.png" alt="Malom" title="MONTÁZS">
+<center>
+    <h1>2024.10.13</h1>
+    <img style="width: 600px; height: 500px;" src="montazs.png" alt="Montázs" title="MONTÁZS">
 </center>
 
 <center>
@@ -380,14 +163,12 @@
     <h4>Balog Dávid</h4>
     <h5>Balog Dávid</h5>
     <h6>Balog Dávid</h6>
-    </center>
-    
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
-    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</center>
 
-  </body>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-
-
-
+<!-- Vége -->
+</body>
+</html>

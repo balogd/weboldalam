@@ -1,75 +1,86 @@
+/* Alap beállítások */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f8ff; /* Világoskék háttér */
-    color: #000000; /* Fekete szöveg */
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4; /* Háttérszín */
+    color: #333; /* Alap szövegszín */
 }
 
+/* Fejléc stílusa */
 header {
-    background-color: #004080; /* Sötétkék fejléc */
-    color: #ffffff; /* Fehér szöveg */
-    padding: 20px;
+    background-color: #4CAF50; /* Zöld fejléc */
+    color: white;
+    padding: 20px 0;
     text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: #004080; /* Címsorok sötétkék színe */
+header .logo h1 {
+    margin: 0;
+    font-size: 2rem;
 }
 
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Tartalom stílusa */
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #4CAF50; /* Címsor zöld színe */
+    border-bottom: 2px solid #4CAF50;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+/* Táblázat stílusa */
 table {
-    width: 80%;
-    margin: 20px auto;
+    width: 100%;
     border-collapse: collapse;
+    margin: 20px 0;
 }
 
 table th, table td {
-    border: 1px solid #004080; /* Kék keret */
+    border: 1px solid #ddd;
     padding: 10px;
     text-align: center;
 }
 
 table th {
-    background-color: #004080; /* Sötétkék fejléc */
-    color: #ffffff; /* Fehér szöveg */
+    background-color: #4CAF50;
+    color: white;
 }
 
-table tr:nth-child(even) {
-    background-color: #e6f7ff; /* Világoskék csíkozás */
-}
-
-table tr:nth-child(odd) {
-    background-color: #ffffff; /* Fehér csíkozás */
-}
-
-a {
-    text-decoration: none;
-    color: #004080;
-}
-
-a:hover {
-    color: #ff4500; /* Narancssárga hover */
-}
-
-.button-container {
-    text-align: center;
-    margin: 20px;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
+/* Képek stílusa */
+.images img {
+    width: 300px;
     margin: 10px;
-    border: 2px solid #004080;
-    border-radius: 5px;
-    background-color: #ffffff;
-    color: #004080;
-    text-transform: uppercase;
-    font-weight: bold;
-    cursor: pointer;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
 }
 
-.btn:hover {
-    background-color: #004080;
-    color: #ffffff;
+/* Lábléc */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }

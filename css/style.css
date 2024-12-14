@@ -1,155 +1,75 @@
-/* styles.css */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #f0f8ff; /* Világoskék háttér */
+    color: #000000; /* Fekete szöveg */
+    margin: 0;
+    padding: 0;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    box-shadow: 0 4px 2px -2px gray;
-    z-index: 1000;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover { 
-    color: #ff6347;
-}
-
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        position: absolute;
-        top: 50px;
-        left: -100%;
-        width: 100%;
-        background-color: #333;
-        transition: left 0.3s ease;
-    }
-
-    nav ul li {
-        text-align: center;
-        margin: 15px 0;
-    }
-
-    .menu-toggle {
-        display: block;
-        font-size: 24px;
-        color: #fff;
-        cursor: pointer;
-    }
-
-    nav.active ul {
-        left: 0;
-    }
-}
-
-.menu-toggle {
-    display: none;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
+    background-color: #004080; /* Sötétkék fejléc */
+    color: #ffffff; /* Fehér szöveg */
+    padding: 20px;
     text-align: center;
 }
 
-th {
-    background-color: #f2f2f2;
+h1, h2, h3, h4, h5, h6 {
+    color: #004080; /* Címsorok sötétkék színe */
 }
 
-td {
-    background-color: #cce5ff;
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #004080; /* Kék keret */
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #004080; /* Sötétkék fejléc */
+    color: #ffffff; /* Fehér szöveg */
+}
+
+table tr:nth-child(even) {
+    background-color: #e6f7ff; /* Világoskék csíkozás */
+}
+
+table tr:nth-child(odd) {
+    background-color: #ffffff; /* Fehér csíkozás */
+}
+
+a {
+    text-decoration: none;
+    color: #004080;
+}
+
+a:hover {
+    color: #ff4500; /* Narancssárga hover */
 }
 
 .button-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+    text-align: center;
+    margin: 20px;
 }
 
 .btn {
-    padding: 15px 30px;
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-decoration: none; 
-    color: white;
     display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 2px solid #004080;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #004080;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
 }
 
-.btn-primary {
-    background-color: #3498db;
-}
-
-.btn-primary:hover {
-    background-color: #2980b9;
-    box-shadow: 0 8px 15px rgba(52, 152, 219, 0.4);
-}
-
-.btn-secondary {
-    background-color: #2ecc71;
-}
-
-.btn-secondary:hover {
-    background-color: #27ae60;
-    box-shadow: 0 8px 15px rgba(46, 204, 113, 0.4);
-}
-
-img {
-    width: 20%;
-    height: 40%;
+.btn:hover {
+    background-color: #004080;
+    color: #ffffff;
 }

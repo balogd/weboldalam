@@ -1,58 +1,74 @@
-/* Alap beállítások */
+/* Alap stílusok */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Háttérszín */
-    color: #333; /* Alap szövegszín */
+    background-color: #f0f4f8; /* Világoskék háttérszín */
+    color: #333;
 }
 
 /* Fejléc stílusa */
 header {
     background-color: #4CAF50; /* Zöld fejléc */
     color: white;
-    padding: 20px 0;
+    padding: 15px 0;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-header .logo h1 {
-    margin: 0;
-    font-size: 2rem;
+header .logo {
+    font-size: 28px;
+    font-weight: bold;
 }
 
+/* Navigáció */
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-/* Tartalom stílusa */
-main {
-    padding: 20px;
+nav ul li a:hover {
+    color: #ffd700; /* Arany szín a hoverre */
+}
+
+/* Címsorok stílusai */
+h1 {
+    color: #2a5d9f; /* Kék szín */
+    text-align: center;
 }
 
 h2 {
-    color: #4CAF50; /* Címsor zöld színe */
-    border-bottom: 2px solid #4CAF50;
-    display: inline-block;
-    margin-bottom: 20px;
+    color: #4CAF50; /* Zöld szín */
 }
 
-/* Táblázat stílusa */
+h3 {
+    color: #ff9800; /* Narancssárga szín */
+}
+
+h4, h5, h6 {
+    color: #6d4c41; /* Barna szín */
+}
+
+/* Táblázat stílus */
 table {
-    width: 100%;
+    width: 80%;
+    margin: 20px auto;
     border-collapse: collapse;
-    margin: 20px 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 table th, table td {
@@ -64,23 +80,53 @@ table th, table td {
 table th {
     background-color: #4CAF50;
     color: white;
+    font-weight: bold;
 }
 
-/* Képek stílusa */
-.images img {
-    width: 300px;
-    margin: 10px;
-    border: 2px solid #4CAF50;
-    border-radius: 10px;
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
 }
 
-/* Lábléc */
-footer {
+table tr:hover {
+    background-color: #e1f5fe;
+}
+
+/* Gombok */
+.button-container {
     text-align: center;
-    padding: 10px;
-    background-color: #333;
+    margin: 20px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
     color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #2a5d9f;
+}
+
+.btn-secondary {
+    background-color: #ff9800;
+}
+
+.btn-primary:hover {
+    background-color: #1e437e;
+}
+
+.btn-secondary:hover {
+    background-color: #fb8c00;
+}
+
+/* Képek */
+img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
